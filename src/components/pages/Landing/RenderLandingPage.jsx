@@ -17,6 +17,7 @@ function RenderLandingPage(props) {
   };
 
   const history = useHistory();
+  console.log(process.env.REACT_APP_API_URI);
 
   return (
     <div className="main">
