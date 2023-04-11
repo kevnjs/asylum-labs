@@ -23,6 +23,9 @@ import { CircularProgress } from '@material-ui/core';
 const { background_color } = colors;
 
 function GraphWrapper(props) {
+  console.log('ENV', process.env.REACT_APP_AUTH0_DOMAIN);
+  console.log(window.location.origin);
+
   const { set_view, dispatch } = props;
   let { office, view } = useParams();
   if (!view) {
